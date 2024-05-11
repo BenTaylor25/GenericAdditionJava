@@ -160,3 +160,17 @@ a class and its children:
 - `public static <T super Number> void foo(ArrayList<T> numbers)` is NOT.
 
 But I don't know why this is useful.
+
+---
+
+Unrelated to this summation problem, but another good thing to know about Generics:
+you can require types to extend a class and one or more interfaces.
+```java
+public static <T extends Number & Comparable<T>> void compareNumbers(
+    ArrayList<T> x,
+    ArrayList<T> y
+) {
+    // ..
+}
+```
+(For some reason we still use `extends` intead of `implements` for interfaces in this syntax).
