@@ -100,7 +100,8 @@ public static <T extends Number> double sum(ArrayList<T> numbers) {
 `<T extends Number>` means we can use any type that extends `Number`.
 
 Because the `Number` class contains the addition logic, this is enough for us to perform the
-summing logic.
+summing logic.  
+(Actually, it allows us to convert to `double` but autoboxing takes it from there).
 
 
 We can also use the Wildcard Generic syntax:
