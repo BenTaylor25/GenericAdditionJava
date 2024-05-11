@@ -12,7 +12,7 @@ int c = a + b;   // 5
 
 double x = 2.1;
 double y = 3.2;
-double z = x + y;   //
+double z = x + y;   // 5.3
 ```
 
 But if we want to abstract this to a method and take the sum of all items in an ArrayList:
